@@ -41,4 +41,7 @@ Run main.py, choose an option from the menu, and input the required target and f
 
 This toolkit is educational and intended for use in legal penetration testing and cybersecurity research.
 
+##OUTPUT##
+
+![Image](https://github.com/user-attachments/assets/a1241496-f138-4de6-998e-db0f554d5707)
 
