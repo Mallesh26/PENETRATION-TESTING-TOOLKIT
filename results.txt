@@ -1,0 +1,93 @@
+Starting FTP brute-force on 127.0.0.1
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+Brute-force complete. No valid credentials found.
+Starting FTP brute-force on 127.0.0.1
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+[ERROR] [WinError 10061] No connection could be made because the target machine actively refused it
+Brute-force complete. No valid credentials found.
+Starting FTP brute-force on 127.0.0.1
+[SUCCESS] ftpuser:ftp
+Starting FTP brute-force on 127.0.0.1
+Starting FTP brute-force on 127.0.0.1
+Starting SSH brute-force on 127.0.0.1:22
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+[ERROR] [Errno None] Unable to connect to port 22 on 127.0.0.1
+Starting SSH brute-force on 127.0.0.1:22
+[FAILED] ftpuser:ftp
+[FAILED] ftpuser:1234
+[FAILED] ftpuser:password
+[FAILED] admin:ftp
+[FAILED] admin:1234
+[FAILED] admin:password
+[FAILED] test:ftp
+[FAILED] test:1234
+[FAILED] test:password
+Starting SSH brute-force on 127.0.0.1:22
+Username or password file not found.
+Starting SSH brute-force on 127.0.0.1:22
+Username or password file not found.
+Starting SSH brute-force on 127.0.0.1:22
+Username or password file not found.
+Starting SSH brute-force on 127.0.0.1:22
+Starting SSH brute-force on 127.0.0.1:22
+Username or password file not found.
+Starting SSH brute-force on 127.0.0.1:22
+Username or password file not found.
+Starting SSH brute-force on 127.0.0.1:22
+Username or password file not found.
+Starting SSH brute-force on 127.0.0.1:22
+[FAILED] ftpuser:ftp
+[FAILED] ftpuser:1234
+[FAILED] ftpuser:password
+[FAILED] ftpuser:testpass
+[FAILED] admin:ftp
+[FAILED] admin:1234
+[FAILED] admin:password
+[FAILED] admin:testpass
+[FAILED] test:ftp
+[FAILED] test:1234
+[ERROR] Error reading SSH protocol banner[WinError 10053] An established connection was aborted by the software in your host machine
+[ERROR] Error reading SSH protocol banner[WinError 10053] An established connection was aborted by the software in your host machine
+[FAILED] testuser:ftp
+[FAILED] testuser:1234
+[FAILED] testuser:password
+[SUCCESS] testuser:testpass
+Starting SSH brute-force on 127.0.0.1:22
+[FAILED] ftpuser:ftp
+[FAILED] ftpuser:1234
+[FAILED] ftpuser:password
+[FAILED] ftpuser:testpass
+[FAILED] admin:ftp
+[FAILED] admin:1234
+[FAILED] admin:password
+[FAILED] admin:testpass
+[FAILED] test:ftp
+[FAILED] test:1234
+[FAILED] test:password
+[FAILED] test:testpass
+[FAILED] testuser:ftp
+[FAILED] testuser:1234
+[FAILED] testuser:password
+[SUCCESS] testuser:testpass
